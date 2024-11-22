@@ -74,6 +74,11 @@ button{
   
   .login-right {
     background-color: white;
+    background-image: url('./../../../../assets/Poster\ CineSuggest.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% 100%;
+    background-position: right center; 
   }
   
   .login-info {
@@ -98,36 +103,7 @@ button{
 
 
 
+ 
 
-
-
-
-  /////////////////////////   Text with external line  //////////////////////
-  
-  .center-text {
-    text-align: center;
-    position: relative;
-}
-.center-text::before, .center-text::after {
-    content: "";
-    display: inline-block;
-    width: 40%;
-    height: 1px;
-    background-color: #000;
-    vertical-align: middle;
-}
-.center-text::before {
-    margin-right: 10px;
-}
-.center-text::after {
-    margin-left: 10px;
-}
-
-.shrink-line {
-    white-space: nowrap; /* Empêche le saut de ligne */
-    display: inline-block; /* Nécessaire pour le scale */
-    transform: scaleX(0.8); /* Réduit horizontalement la largeur */
-    transform-origin: left; /* Définit le point de transformation */
-}
 
 
