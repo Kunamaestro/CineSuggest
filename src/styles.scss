@@ -1,3 +1,26 @@
 @import url("./styles/flex.scss");
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+
+
+  .custom-link {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #007bff; /* Couleur du lien */
+    font-weight: bold; /* Met en gras */
+    transition: color 0.3s ease; /* Effet de transition au survol */
+  }
+  
+  .custom-link:hover {
+    color: #0056b3; /* Couleur au survol */
+    text-decoration: underline; /* Ajoute le soulignement au survol */
+  }
+
+  .warning-message{
+    color:red;
+    font-size: small;
+    padding: 2px;
+  }

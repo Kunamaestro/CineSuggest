@@ -2,14 +2,16 @@
     <div class="login-left gap-10">
       <h2>Création de compte 😊</h2>
       <form>
-        
+        <label for="username">Nom d'utilisateur</label>
+        <input id="username" name="username" >
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="monmail@mail.com">
         <label for="password">Mot de passe</label>
         <input type="password" id="password" name="password" >
         <label for="password-confirm">Confirmer votre mot de passe</label>
         <input type="password" id="password-confirm" name="password-confirm">
-        <button type="submit" class="btn btn-signin" style="color: white!important;">Se connecter</button>
+        <span class="self-end warning-message">Les 2 mots de passe doivent être identique.</span>
+        <button type="submit" class="btn btn-signin" style="color: white!important;">Créer un compte</button>
       </form>
       
        

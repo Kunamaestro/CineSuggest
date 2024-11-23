@@ -7,6 +7,7 @@
         <input type="email" id="email" name="email" placeholder="monmail@mail.com">
         <label for="password">Mot de passe</label>
         <input type="password" id="password" name="password" placeholder="******">
+        <p><a class="custom-link" (click)="router.forgottenPasswordPage()">Mot de passe oublié ?</a></p>
         <button type="submit" class="btn btn-signin" style="color: white!important;">Se connecter</button>
       </form>
       
@@ -22,7 +23,7 @@
         </button>
         
       </div>
-      <p>Pas de compte? <a href="#">Créer un compte</a></p>
+      <p>Pas de compte? <a class="custom-link" (click)="router.signUpPage()">Créer un compte</a></p>
     </div>
 
 

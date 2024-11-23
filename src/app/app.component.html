@@ -1,1 +1,8 @@
-<app-sign-up></app-sign-up>
+@if(displayStructuralSection()){
+    <app-header></app-header>
+}
+<router-outlet></router-outlet>
+
+@if(displayStructuralSection()){
+    <app-footer></app-footer>
+}
