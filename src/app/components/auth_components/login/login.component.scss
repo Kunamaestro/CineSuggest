@@ -57,7 +57,7 @@ button{
     cursor: pointer;
   }
   
-  .login-left .btn-google {
+  .login-left .btn-google .btn-facebook {
     background-color: #f5f5f5;
     color: white;
   }
@@ -68,13 +68,17 @@ button{
   }
   
   .login-left .btn-signin {
-    background-color: #4a90e2;
+    background-color: red;
     color: white;
+  }
+
+  .btn-signin{
+    font-weight: 900;
   }
   
   .login-right {
     background-color: white;
-    background-image: url('./../../../../assets/Poster\ CineSuggest.jpg');
+    background-image: url('./../../../../assets/images/Cinema/Poster\ CineSuggest.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 50% 100%;

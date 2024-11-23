@@ -28,13 +28,21 @@ mat-toolbar{
 //////////////////////  Main  /////////////////
 @import url("./styles/flex.scss");
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%;
+  background-color: $neutral;
+  // color : $neutral;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
  
 
   /////////   miscellaneous class  ////////////////////
+
+  a {
+    cursor: pointer !important;
+  }
 
   .custom-link {
     text-decoration: none; /* Supprime le soulignement */
