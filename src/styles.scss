@@ -21,7 +21,9 @@ $tertiary: #ffc078;
 $neutral : #f5f5f5;
 mat-toolbar{
   background-color: $primary!important;
+  color:$neutral!important;
 }
+
 
 //////////////////////  Main  /////////////////
 @import url("./styles/flex.scss");

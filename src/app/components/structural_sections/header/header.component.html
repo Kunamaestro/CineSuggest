@@ -1,6 +1,30 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="row space-between self-center">
+    <img style="width: 36px;" src="assets\cinesuggestmascotte.png">
 
+    <div id="route">
+        <button mat-button>Accueil</button>
+        <button mat-button>Films</button>
+        <button mat-button>Séries</button>
+        <button mat-button>Mes listes</button>
+    </div>
 
+    <button id="user" mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>person</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Paramètres</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>help</mat-icon>
+            <span>Aide</span>
+          </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Deconnexion</span>
+        </button>
+      </mat-menu>
 
 
 
