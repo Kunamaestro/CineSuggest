@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
+import { RouterService } from '../../../services/router.service';
 @Component({
   selector: 'app-sign-up',
   imports: [MatButtonModule],
@@ -7,5 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './sign-up.component.scss'
 })
 export class SignUpComponent {
+
+  constructor(public router:RouterService){}
 
 }
