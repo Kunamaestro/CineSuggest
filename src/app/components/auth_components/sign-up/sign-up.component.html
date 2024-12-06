@@ -1,19 +1,20 @@
 <div class="login-container">
     <div class="login-left gap-10">
       <h2>Création de compte 😊</h2>
-      <form>
+      <form [formGroup]="this.form" (ngSubmit)="submitSubscription()">
         <label for="username">Nom d'utilisateur</label>
-        <input id="username" name="username" >
+        <input id="username" name="username" formControlName="username">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="monmail@mail.com">
+        <input type="email" id="email" name="email" placeholder="monmail@mail.com" formControlName="mail">
         <label for="password">Mot de passe</label>
-        <input type="password" id="password" name="password" >
+        <input type="password" id="password" name="password" (change)="setIsSamePasswordState()" formControlName="password1">
         <label for="password-confirm">Confirmer votre mot de passe</label>
-        <input type="password" id="password-confirm" name="password-confirm">
-        <span class="self-end warning-message">Les 2 mots de passe doivent être identique.</span>
-        <button type="submit" class="btn btn-signin" style="color: white!important;">Créer un compte</button>
+        <input type="password" id="password-confirm" name="password-confirm" (change)="setIsSamePasswordState()" formControlName="password2">
+        @if(!isSamePasswordState()){
+          <span class="self-end warning-message">Les 2 mots de passe doivent être identique.</span>
+        }
+        <button type="submit" class="btn btn-signin" style="color: white!important;" [disabled]="!this.form.valid">Créer un compte</button>
       </form>
-      
        
       <div class="column center self-center gap-10" style="padding-bottom: 30px;padding-top: 20px;" >
         <button mat-stroked-button ="btn btn-google" style="margin: 5px; border-radius: 0;">
